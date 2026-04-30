@@ -1,8 +1,8 @@
 package br.com.acoesconta;
-import java.util.Scanner;
 
 public class Saldo {
     private double saldo;
+
     public Saldo(double saldoInicial) {
         this.saldo = saldoInicial;
     }
@@ -14,6 +14,6 @@ public class Saldo {
         this.saldo = saldo;
     }
     public void exibirSaldo() {
-        System.out.printf("Slado atual da sua conta corrente: R$ %.2f%n", saldo);
+        System.out.printf("SaLdo atual da sua conta corrente: R$ %.2f%n", saldo);
     }  
 }

@@ -9,7 +9,7 @@ public class Saque {
 
         while (opcao != 0) {
             System.out.println("SAQUE");
-            System.out.println("[1] Realizar Saque \n [2] Voltar ao Menu");
+            System.out.println("[ 1 ] Realizar Saque \n [ 0 ] Voltar ao Menu");
             opcao = scanner.nextInt();
 
             switch (opcao) {
@@ -18,9 +18,9 @@ public class Saque {
                     double valor = scanner.nextDouble();
 
                     if (valor <0){
-                        System.out.println("Valor inválido.");
+                        System.out.println("( X ) Valor inválido.");
                     } else if (valor > conta.getSaldo()) {
-                        System.out.println("Saldo insuficiente.");
+                        System.out.println("( X ) Saldo insuficiente.");
                         conta.exibirSaldo();
                     } else {
                         conta.setSaldo((conta.getSaldo() - valor));
@@ -28,7 +28,7 @@ public class Saque {
                         conta.exibirSaldo();
                     }
                 }   
-                case 2 -> System.out.println("Voltando ao menu...");    
+                case 0 -> System.out.println("Voltando ao menu...");    
                 default -> System.out.println("Opção inválida.");
             }
   

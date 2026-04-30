@@ -12,7 +12,7 @@ public class App {
         int opcao = -1;
         while (opcao != 0) {
             System.out.println(" / / / / Conta Corrente no Banco Brasil BR / / / /");
-            System.out.println("Escolha uma opção \n[1] Saldo  \n[2] Saque  \n[3] Depósito  \n[4] Encerrar");
+            System.out.println("Escolha uma opção\n[ 1 ] Saldo\n[ 2 ] Saque\n[ 3 ] Depósito\n[ 4 ] Encerrar");
 
             opcao = scanner.nextInt();
 
